@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/facturation-font-end",
+            "outputPath": "dist/facturation-front-end",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "facturationFontEnd:build:production"
+              "buildTarget": "facturationFrontEnd:build:production"
             },
             "development": {
-              "buildTarget": "facturationFontEnd:build:development"
+              "buildTarget": "facturationFrontEnd:build:development"
             }
           },
           "defaultConfiguration": "development"
