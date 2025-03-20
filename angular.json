@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "facturationFontEnd": {
+    "facturationFrontEnd": {
       "projectType": "application",
       "schematics": {},
       "root": "",
