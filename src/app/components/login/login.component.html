@@ -1,12 +1,14 @@
-<body>
-<div class="container" id="login-section">
-    <h2>Facturation</h2>
-    <input type="text" id="username" placeholder="Username" />
-    <input type="password" id="password" placeholder="Password" />
-    <button id="login-btn">Login</button>
-    
-    <p id="login-error-message" class="error-message"></p>
-    <p-button id="login-btn" label="Info" severity="info" />
-  </div>
-</body>
-  <script src="login.js"></script>
+<div id="container">
+  <form>
+    <p-card styleClass="globalCard">
+      <div class="flex flex-col gap-2">
+        <label for="username">Username</label>
+        <input pInputText id="username" aria-describedby="username-help" [(ngModel)]="username"/>
+        <small id="username-help">Enter your username to reset your password.</small>
+      </div>
+      
+    </p-card>
+  
+  </form>
+</div>
+
