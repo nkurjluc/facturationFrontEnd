@@ -1,14 +1,27 @@
-<div id="container">
+
   <form>
-    <p-card styleClass="globalCard">
-      <div class="flex flex-col gap-2">
-        <label for="username">Username</label>
-        <input pInputText id="username" aria-describedby="username-help" [(ngModel)]="username"/>
-        <small id="username-help">Enter your username to reset your password.</small>
-      </div>
-      
-    </p-card>
+    <div class="center-card">
+      <p-card>  
+        <ng-template pTemplate="header">
+          <h2 class="header-center">Authentification</h2>
+        </ng-template>       
+          <div class="grid grid-cols-1 gap-4">
+            <label for="username">Nom d'utilisateur</label>                       
+            <input pInputText id="username" aria-describedby="username-help" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" 
+            class="border-2 border-gray-400 p-2 rounded-md focus:border-blue-500 focus:outline-none"/> 
+  
+            <label for="password">Mot de passe</label>
+            <input pInputText id="password" aria-describedby="password-help" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" 
+            class="border-2 border-gray-400 p-2 rounded-md focus:border-blue-500 focus:outline-none"/> 
+
+            <p-button label="Enregistrer" icon="pi pi-check" iconPos="right" styleClass="p-button-success mt-4"></p-button>
+
+          </div>
+                    
+      </p-card>
+    </div>
+
   
   </form>
-</div>
+
 
