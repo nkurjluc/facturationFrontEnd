@@ -14,8 +14,14 @@
             <input pInputText id="password" aria-describedby="password-help" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" 
             class="border-2 border-gray-400 p-2 rounded-md focus:border-blue-500 focus:outline-none"/> 
 
-            <p-button label="Enregistrer" icon="pi pi-check" iconPos="right" styleClass="p-button-success mt-4"></p-button>
+          </div>
 
+          <div style="display: flex; justify-content: center; margin-top: 1rem;">
+            <p-button 
+              label="Enregistrer" 
+              icon="pi pi-check"
+              styleClass="my-custom-button">
+            </p-button>
           </div>
                     
       </p-card>
